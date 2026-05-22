@@ -2,15 +2,15 @@
 
 ## Role
 
-Single-purpose **marketing and distribution** surface for LuminaSync. It does not run the display engine or mobile pairing logic.
+Single-purpose **marketing and distribution** surface for VibranceFlow. It does not run the display engine or mobile pairing logic.
 
 ## Deployment
 
 | Item | Plan |
 |------|------|
-| Host | [Vercel](https://vercel.com) connected to `LuminaSync/LuminaSync-web` |
+| Host | [Vercel](https://vercel.com) connected to `VibranceFlow/VibranceFlow-web` |
 | Branch | `main` → production (maintainer-only repository) |
-| Domain | [luminasync.vercel.app](https://luminasync.vercel.app); optional custom `luminasync.vercel.com` in Vercel |
+| Domain | [vibranceflow.vercel.app](https://vibranceflow.vercel.app); optional custom `vibranceflow.vercel.app` in Vercel |
 
 ## Stack (implemented)
 
@@ -29,7 +29,7 @@ Single-purpose **marketing and distribution** surface for LuminaSync. It does no
 
 ## SEO checklist
 
-- [ ] `<title>` ≤ 60 chars, includes "LuminaSync" + primary keyword (e.g. game vibrance Windows)
+- [ ] `<title>` ≤ 60 chars, includes "VibranceFlow" + primary keyword (e.g. game vibrance Windows)
 - [ ] Meta description ~150–160 chars
 - [ ] `link rel="canonical"`
 - [ ] Open Graph: `og:title`, `og:description`, `og:image`, `og:url`
@@ -41,16 +41,16 @@ Single-purpose **marketing and distribution** surface for LuminaSync. It does no
 
 ## Download links policy
 
-- **Windows:** GitHub Release asset from LuminaSync-core when published.
+- **Windows:** GitHub Release asset from VibranceFlow-core when published.
 - **Linux:** Release or docs link when supported; otherwise disabled CTA.
-- **Android / iOS:** Store URLs or "Coming soon" until LuminaSync-mobile ships.
+- **Android / iOS:** Store URLs or "Coming soon" until VibranceFlow-mobile ships.
 
 Never imply a build exists without a real URL.
 
 ## Third-party
 
 - **Buy Me a Coffee:** external link, `rel="noopener noreferrer"`.
-- **GitHub:** org `https://github.com/LuminaSync`.
+- **GitHub:** org `https://github.com/VibranceFlow`.
 
 ## License boundary
 

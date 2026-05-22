@@ -1,15 +1,15 @@
 # Project overview
 
-Marketing and distribution site for the LuminaSync ecosystem: landing page, platform downloads, links to GitHub, and support (e.g. Buy Me a Coffee). Hosted on **Vercel**.
+Marketing and distribution site for the VibranceFlow ecosystem: landing page, platform downloads, links to GitHub, and support (e.g. Buy Me a Coffee). Hosted on **Vercel**.
 
 ## Ecosystem
 
 | Repo | Role | License |
 |------|------|---------|
-| [LuminaSync-core](https://github.com/LuminaSync/LuminaSync-core) | Windows desktop | GPL-3.0 |
-| [LuminaSync-mobile](https://github.com/LuminaSync/LuminaSync-mobile) | Android / iOS remote | GPL-3.0 |
-| [LuminaSync-PoC](https://github.com/LuminaSync/LuminaSync-PoC) | Archived PoC | — |
-| [LuminaSync-web](https://github.com/LuminaSync/LuminaSync-web) | This site | MIT |
+| [VibranceFlow-core](https://github.com/VibranceFlow/VibranceFlow-core) | Windows desktop | GPL-3.0 |
+| [VibranceFlow-mobile](https://github.com/VibranceFlow/VibranceFlow-mobile) | Android / iOS remote | GPL-3.0 |
+| [VibranceFlow-PoC](https://github.com/VibranceFlow/VibranceFlow-PoC) | Archived PoC | — |
+| [VibranceFlow-web](https://github.com/VibranceFlow/VibranceFlow-web) | This site | MIT |
 
 ## Tech direction
 
@@ -26,7 +26,7 @@ Marketing and distribution site for the LuminaSync ecosystem: landing page, plat
 
 ## Maintenance
 
-Maintainer-only repository. Code contributions belong in LuminaSync-core and LuminaSync-mobile.
+Maintainer-only repository. Code contributions belong in VibranceFlow-core and VibranceFlow-mobile.
 
 ## Out of scope
 

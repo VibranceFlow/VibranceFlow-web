@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://luminasync.vercel.app/sitemap.xml
+Sitemap: https://vibranceflow.vercel.app/sitemap.xml

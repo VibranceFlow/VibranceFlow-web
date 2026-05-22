@@ -4,6 +4,6 @@
   <circle cx="200" cy="500" r="220" fill="#8b5cf6" opacity="0.15"/>
   <circle cx="420" cy="300" r="72" fill="#00e5c0"/>
   <circle cx="420" cy="300" r="26" fill="#8b5cf6"/>
-  <text x="540" y="290" fill="#f0f0f5" font-family="Segoe UI, system-ui, sans-serif" font-size="72" font-weight="700">LuminaSync</text>
+  <text x="540" y="290" fill="#f0f0f5" font-family="Segoe UI, system-ui, sans-serif" font-size="72" font-weight="700">VibranceFlow</text>
   <text x="540" y="360" fill="#8888a0" font-family="Segoe UI, system-ui, sans-serif" font-size="36">Coming soon</text>
 </svg>
