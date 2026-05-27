@@ -8,7 +8,7 @@ Marketing and distribution site for the VibranceFlow ecosystem: landing page, pl
 |------|------|---------|
 | [VibranceFlow-core](https://github.com/VibranceFlow/VibranceFlow-core) | Windows desktop | GPL-3.0 |
 | [VibranceFlow-mobile](https://github.com/VibranceFlow/VibranceFlow-mobile) | Android / iOS remote | GPL-3.0 |
-| [VibranceFlow-PoC](https://github.com/VibranceFlow/VibranceFlow-PoC) | Archived PoC | — |
+| [VibranceFlow-PoC](https://github.com/VibranceFlow/VibranceFlow-PoC) | Archived PoC | - |
 | [VibranceFlow-web](https://github.com/VibranceFlow/VibranceFlow-web) | This site | MIT |
 
 ## Tech direction

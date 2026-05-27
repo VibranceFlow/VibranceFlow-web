@@ -296,6 +296,30 @@ body {
   width: fit-content;
 }
 
+.contrib-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.contrib-link {
+  display: block;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  background: color-mix(in srgb, var(--card) 85%, var(--accent) 8%);
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.contrib-link:hover {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--card) 75%, var(--accent) 12%);
+}
+
 .footer {
   padding: 1.5rem 0 2rem;
   text-align: center;

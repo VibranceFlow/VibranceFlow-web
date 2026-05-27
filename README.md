@@ -42,7 +42,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Support
 
-- [Ko-fi — support VibranceFlow](https://ko-fi.com/fabio_monreal)
+- [Ko-fi - support VibranceFlow](https://ko-fi.com/fabio_monreal)
 
 ## Documentation
 
@@ -53,4 +53,4 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT - see [LICENSE](LICENSE).
