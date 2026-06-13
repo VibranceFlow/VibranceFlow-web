@@ -30,7 +30,7 @@ Single-purpose **marketing and distribution** surface for VibranceFlow. It does 
 ## SEO checklist
 
 - [ ] `<title>` ≤ 60 chars, includes "VibranceFlow" + primary keyword (e.g. game vibrance Windows)
-- [ ] Meta description ~150–160 chars
+- [ ] Meta description ~150-160 chars
 - [ ] `link rel="canonical"`
 - [ ] Open Graph: `og:title`, `og:description`, `og:image`, `og:url`
 - [ ] Twitter card `summary_large_image`
