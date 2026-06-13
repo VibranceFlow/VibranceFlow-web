@@ -262,6 +262,147 @@ body {
   color: var(--muted);
 }
 
+.hash-pending {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.hash-copy {
+  margin-left: 0.35rem;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  border-radius: 6px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.hash-copy-sm {
+  margin-left: 0.25rem;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.68rem;
+}
+
+.hash-copy:hover {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+.downloads-android-extra {
+  margin: -1rem auto 2rem;
+  max-width: 42rem;
+  text-align: left;
+}
+
+.dl-variants {
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--muted) 22%, transparent);
+  background: color-mix(in srgb, var(--card) 88%, var(--accent-2) 4%);
+  padding: 0.65rem 0.85rem;
+}
+
+.dl-variants summary {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  list-style: none;
+}
+
+.dl-variants summary::-webkit-details-marker {
+  display: none;
+}
+
+.dl-variants summary::before {
+  content: "▸ ";
+  color: var(--accent);
+}
+
+.dl-variants[open] summary::before {
+  content: "▾ ";
+}
+
+.dl-variants-lead {
+  margin: 0.65rem 0 0.75rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.dl-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dl-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.dl-table th,
+.dl-table td {
+  padding: 0.45rem 0.35rem;
+  border-top: 1px solid color-mix(in srgb, var(--muted) 18%, transparent);
+  vertical-align: middle;
+}
+
+.dl-table th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.dl-abi strong {
+  display: block;
+  color: var(--text);
+}
+
+.dl-abi span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.dl-action {
+  white-space: nowrap;
+  width: 1%;
+}
+
+.btn-sm {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.78rem;
+}
+
+.dl-hash {
+  font-size: 0.72rem;
+  word-break: break-all;
+}
+
+.dl-hash-cell {
+  min-width: 9rem;
+}
+
+.dl-vt {
+  margin-left: 0.25rem;
+  font-size: 0.72rem;
+  color: var(--accent);
+}
+
+.dl-variants-foot {
+  margin: 0.65rem 0 0.15rem;
+  font-size: 0.8rem;
+}
+
+.dl-variants-foot a {
+  color: var(--accent);
+}
+
 .note {
   margin: 0;
   font-size: 0.85rem;
