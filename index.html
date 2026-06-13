@@ -6,11 +6,11 @@
     <title>VibranceFlow - Per‑app display color on Windows · Android remote</title>
     <meta
       name="description"
-      content="Download VibranceFlow for Windows 10/11 and Android. Open source alternative to VibranceGUI: LAN pairing, sliders, firewall-friendly. Contribute on GitHub."
+      content="VibranceFlow: Windows desktop app & Android LAN remote. Adjust per-app gamma, contrast, hue, and volume. Designed for gamers, designers, and streamers. Open source."
     />
     <meta
       name="keywords"
-      content="VibranceFlow, VibranceGUI alternative, Windows color profile, per-app display, Android remote, open source, GitHub, contributors"
+      content="adjust gamma while gaming, contrast slider for designers, remote volume control windows, monitor brightness app, screen color control remote, per-app display color, VibranceFlow"
     />
     <meta name="author" content="Fabio Monreal" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -118,12 +118,38 @@
 
     <main class="main">
       <p class="badge">Free · open source</p>
-      <h1 class="title">Better color for every app on Windows, with your phone nearby</h1>
+      <h1 class="title">Automate your screen colors for every game and app. Plus, a powerful remote.</h1>
       <p class="lead">
-        VibranceFlow sets vibrance, brightness, contrast, gamma, and hue <strong>per program</strong> on Windows.
-        Designed for gamers, designers, editors, and anyone who wants richer color without juggling settings.
-        The Android companion controls your PC over the same Wi‑Fi after a quick LAN pair (QR or 6‑digit PIN).
+        VibranceFlow <strong>automatically</strong> switches your PC's vibrance, brightness, and color profiles the moment you focus on a specific game or program. No more juggling settings.
+        <br/><br/>
+        Want manual control? The optional Android companion turns your phone into a LAN remote to tweak screen colors and background audio (like Spotify) without ever Alt-Tabbing.
+        <br/><br/>
+        <strong>🎮 Gamers:</strong> Adjust contrast and gamma in-game. Control background music volume remotely.<br/>
+        <strong>🎨 Designers & Editors:</strong> Easily alter saturation to test visual accessibility.<br/>
+        <strong>📺 Casual Users:</strong> Control your PC's screen brightness, tone, and volume from the couch.<br/>
+        <strong>🎥 Streamers:</strong> Change display color profiles dynamically without leaking settings on stream.
       </p>
+
+      <section class="gallery">
+        <div class="gallery-grid">
+          <figure>
+            <img class="zoomable" src="/images/vibranceflow-windows-core-main.png" alt="VibranceFlow Core Main Window" loading="lazy" />
+            <figcaption>Windows App: Per-app profiles and sliders</figcaption>
+          </figure>
+          <figure>
+            <img class="zoomable" src="/images/vibranceflow-windows-pair-mobile.png" alt="VibranceFlow Pair Mobile Window" loading="lazy" />
+            <figcaption>Windows App: Easy LAN pairing</figcaption>
+          </figure>
+          <figure>
+            <img class="zoomable" src="/images/vibranceflow-android-pair.jpeg" alt="VibranceFlow Android Pair Screen" loading="lazy" />
+            <figcaption>Android App: Secure pairing</figcaption>
+          </figure>
+          <figure>
+            <img class="zoomable" src="/images/vibranceflow-android-remote-control.jpeg" alt="VibranceFlow Android Remote Control" loading="lazy" />
+            <figcaption>Android App: Remote display and volume control</figcaption>
+          </figure>
+        </div>
+      </section>
 
       <nav class="links links-downloads" aria-label="Official downloads">
         <a
@@ -265,5 +291,46 @@
         Unpackaged / unsigned binaries may occasionally trigger antivirus heuristics; the project publishes open‑source code and VirusTotal links for transparency. If flagged, verify the SHA‑256 and report a false positive to your vendor - see the Core README.
       </p>
     </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal" aria-hidden="true">
+      <span class="modal-close" aria-label="Close image">&times;</span>
+      <img class="modal-content" id="modalImg" alt="" />
+    </div>
+
+    <script>
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImg");
+      const zoomableImgs = document.querySelectorAll(".zoomable");
+      const closeBtn = document.querySelector(".modal-close");
+
+      zoomableImgs.forEach(img => {
+        img.addEventListener("click", function() {
+          modal.style.display = "flex";
+          modalImg.src = this.src;
+          modalImg.alt = this.alt;
+          document.body.style.overflow = "hidden"; // Prevent scrolling behind modal
+        });
+      });
+
+      function closeModal() {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      closeBtn.addEventListener("click", closeModal);
+
+      modal.addEventListener("click", (e) => {
+        if (e.target !== modalImg) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.style.display === "flex") {
+          closeModal();
+        }
+      });
+    </script>
   </body>
 </html>
