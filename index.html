@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>VibranceFlow - Per‑app display color on Windows · Android remote</title>
+    <title>VibranceFlow - Per-app display color on Windows · Android remote</title>
     <meta
       name="description"
-      content="Download VibranceFlow for Windows 10/11 and Android. Open source alternative to VibranceGUI: LAN pairing, sliders, firewall-friendly. Contribute on GitHub."
+      content="VibranceFlow: Windows desktop app & Android LAN remote. Adjust per-app gamma, contrast, hue, and volume. Designed for gamers, designers, and streamers. Open source."
     />
     <meta
       name="keywords"
-      content="VibranceFlow, VibranceGUI alternative, Windows color profile, per-app display, Android remote, open source, GitHub, contributors"
+      content="adjust gamma while gaming, contrast slider for designers, remote volume control windows, monitor brightness app, screen color control remote, per-app display color, VibranceFlow"
     />
     <meta name="author" content="Fabio Monreal" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -20,7 +20,7 @@
     <meta property="og:title" content="VibranceFlow - Windows + Android color control" />
     <meta
       property="og:description"
-      content="Official site: download Windows .exe and Android .apk, verify on VirusTotal, pair over Wi‑Fi. Open source - pull requests welcome."
+      content="Official site: download Windows .exe and Android .apk, verify on VirusTotal, pair over Wi-Fi. Open source - pull requests welcome."
     />
     <meta property="og:image" content="https://vibranceflow.vercel.app/og-image.png" />
     <meta property="og:site_name" content="VibranceFlow" />
@@ -43,14 +43,14 @@
             "@type": "WebSite",
             "name": "VibranceFlow",
             "url": "https://vibranceflow.vercel.app/",
-            "description": "Official VibranceFlow site: Windows desktop app with Android LAN remote. Open source (GPL‑3.0 apps; MIT site)."
+            "description": "Official VibranceFlow site: Windows desktop app with Android LAN remote. Open source (GPL-3.0 apps; MIT site)."
           },
           {
             "@type": "SoftwareApplication",
             "name": "VibranceFlow",
             "applicationCategory": "DesktopApplication",
             "operatingSystem": "Windows 10, Windows 11",
-            "downloadUrl": "https://github.com/VibranceFlow/VibranceFlow-core/releases/download/v1.0.0/VibranceFlow.exe",
+            "downloadUrl": "https://github.com/VibranceFlow/VibranceFlow-core/releases/download/V1.1.0/VibranceFlow.exe",
             "description": "Windows tray app for per-app vibrance, brightness, contrast, gamma, and hue with NVAPI/Win32. Pair Android over LAN WebSocket.",
             "url": "https://vibranceflow.vercel.app/",
             "softwareHelp": "https://github.com/VibranceFlow/VibranceFlow-core#readme",
@@ -77,7 +77,7 @@
             "name": "VibranceFlow Mobile",
             "applicationCategory": "MobileApplication",
             "operatingSystem": "Android",
-            "downloadUrl": "https://github.com/VibranceFlow/VibranceFlow-mobile/releases/download/v1.0.0/vibranceflow-release.apk",
+            "downloadUrl": "https://github.com/VibranceFlow/VibranceFlow-mobile/releases/download/V1.1.0/vibranceflow-universal-release.apk",
             "description": "Android companion to control VibranceFlow Core sliders, pairing, observer, and per-app audio over encrypted LAN.",
             "url": "https://vibranceflow.vercel.app/",
             "softwareHelp": "https://github.com/VibranceFlow/VibranceFlow-mobile#readme",
@@ -118,69 +118,89 @@
 
     <main class="main">
       <p class="badge">Free · open source</p>
-      <h1 class="title">Better color for every app on Windows, with your phone nearby</h1>
+      <h1 class="title">Automate your screen colors for every game and app. Plus, a powerful remote.</h1>
       <p class="lead">
-        VibranceFlow sets vibrance, brightness, contrast, gamma, and hue <strong>per program</strong> on Windows.
-        Designed for gamers, designers, editors, and anyone who wants richer color without juggling settings.
-        The Android companion controls your PC over the same Wi‑Fi after a quick LAN pair (QR or 6‑digit PIN).
+        VibranceFlow <strong>automatically</strong> switches your PC's vibrance, brightness, and color profiles the moment you focus on a specific game or program. No more juggling settings.
+        <br/><br/>
+        Want manual control? The optional Android companion turns your phone into a LAN remote to tweak screen colors and background audio (like Spotify) without ever Alt-Tabbing.
+        <br/><br/>
+        <strong>🎮 Gamers:</strong> Adjust contrast and gamma in-game. Control background music volume remotely.<br/>
+        <strong>🎨 Designers & Editors:</strong> Easily alter saturation to test visual accessibility.<br/>
+        <strong>📺 Casual Users:</strong> Control your PC's screen brightness, tone, and volume from the couch.<br/>
+        <strong>🎥 Streamers:</strong> Change display color profiles dynamically without leaking settings on stream.
       </p>
 
-      <nav class="links links-downloads" aria-label="Official downloads">
+      <section class="gallery">
+        <div class="gallery-grid">
+          <figure>
+            <img class="zoomable" src="/images/vibranceflow-windows-core-main.png" alt="VibranceFlow Core Main Window" loading="lazy" />
+            <figcaption>Windows App: Per-app profiles and sliders</figcaption>
+          </figure>
+          <figure>
+            <img class="zoomable" src="/images/vibranceflow-windows-pair-mobile.png" alt="VibranceFlow Pair Mobile Window" loading="lazy" />
+            <figcaption>Windows App: Easy LAN pairing</figcaption>
+          </figure>
+          <figure>
+            <img class="zoomable" src="/images/vibranceflow-android-pair.jpeg" alt="VibranceFlow Android Pair Screen" loading="lazy" />
+            <figcaption>Android App: Secure pairing</figcaption>
+          </figure>
+          <figure>
+            <img class="zoomable" src="/images/vibranceflow-android-remote-control.jpeg" alt="VibranceFlow Android Remote Control" loading="lazy" />
+            <figcaption>Android App: Remote display and volume control</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <nav class="links links-downloads" aria-label="Official downloads" id="download">
         <a
+          id="btn-download-windows"
           class="btn btn-primary btn-download"
-          href="https://github.com/VibranceFlow/VibranceFlow-core/releases/download/v1.0.0/VibranceFlow.exe"
+          href="https://github.com/VibranceFlow/VibranceFlow-core/releases/download/V1.1.0/VibranceFlow.exe"
           rel="noopener noreferrer"
           >Download for Windows 10/11 (.exe)</a
         >
         <a
+          id="btn-download-android"
           class="btn btn-secondary btn-download"
-          href="https://github.com/VibranceFlow/VibranceFlow-mobile/releases/download/v1.0.0/vibranceflow-release.apk"
+          href="https://github.com/VibranceFlow/VibranceFlow-mobile/releases/download/V1.1.0/vibranceflow-universal-release.apk"
           rel="noopener noreferrer"
-          >Download for Android (.apk)</a
+          >Download for Android (Universal .apk)</a
         >
       </nav>
 
-      <div class="hashes">
+      <div class="hashes" id="downloads-hashes">
         <p class="hash-line">
-          <span class="hash-label">Windows SHA‑256:</span><br />
-          <code class="hash-value">
-            <a href="https://www.virustotal.com/gui/file/9ad23e5a5d2555c60e3d8461a95c34fe02b8760b6d3d9fd60fb354bea3d7f301" rel="noopener noreferrer">
-              9ad23e5a5d2555c60e3d8461a95c34fe02b8760b6d3d9fd60fb354bea3d7f301
-            </a>
-          </code>
-          <span class="hash-meta"> · <a href="https://www.virustotal.com/gui/file/9ad23e5a5d2555c60e3d8461a95c34fe02b8760b6d3d9fd60fb354bea3d7f301" rel="noopener noreferrer">VirusTotal</a></span>
+          <span class="hash-label">Windows SHA-256</span>
+          <span class="hash-pending">Loading checksum...</span>
         </p>
         <p class="hash-line">
-          <span class="hash-label">Android SHA‑256:</span><br />
-          <code class="hash-value">
-            <a href="https://www.virustotal.com/gui/file/8418c3cde2d31a0a63a6c3e96488e57ee47f89e2833051e336440745f2c2bd49" rel="noopener noreferrer">
-              8418c3cde2d31a0a63a6c3e96488e57ee47f89e2833051e336440745f2c2bd49
-            </a>
-          </code>
-          <span class="hash-meta"> · <a href="https://www.virustotal.com/gui/file/8418c3cde2d31a0a63a6c3e96488e57ee47f89e2833051e336440745f2c2bd49" rel="noopener noreferrer">VirusTotal</a></span>
+          <span class="hash-label">Android SHA-256 (Universal)</span>
+          <span class="hash-pending">Loading checksum...</span>
         </p>
         <p class="hashes-hint">
-          Compare with <code>Get-FileHash</code> on Windows or your platform checksum tool. Release artifacts also ship with published hashes on GitHub.
+          <strong>Security check:</strong> Compare the downloaded file hash with the official signature above to ensure it is safe.
         </p>
       </div>
+
+      <div id="downloads-android-extra" class="downloads-android-extra" aria-label="Android APK variants"></div>
 
       <ul class="features">
         <li>
           <span class="feature-icon" aria-hidden="true">◆</span>
           <span
-            ><strong>Per‑app profiles</strong> - pick a running process or any <code>.exe</code>; switches when that window is in focus</span
+            ><strong>Per-app profiles</strong> - pick a running process or any <code>.exe</code>; switches when that window is in focus</span
           >
         </li>
         <li>
           <span class="feature-icon" aria-hidden="true">◇</span>
           <span
-            ><strong>Open source &amp; privacy‑minded</strong> - no cloud account; LAN‑only control with encrypted payloads (Fernet)</span
+            ><strong>Open source &amp; privacy-minded</strong> - no cloud account; LAN-only control with encrypted payloads (Fernet)</span
           >
         </li>
         <li>
           <span class="feature-icon" aria-hidden="true">◇</span>
           <span
-            ><strong>Android remote</strong> - sliders, program list, observer, reset, and per‑app audio when the PC sees a live session</span
+            ><strong>Android remote</strong> - sliders, program list, observer, reset, and per-app audio when the PC sees a live session</span
           >
         </li>
         <li>
@@ -212,7 +232,7 @@
           Add games or apps, tune sliders, then open <strong>Pair Mobile</strong>.
         </p>
         <p>
-          <strong>Android:</strong> install the APK, stay on the same Wi‑Fi as the PC, then pair via QR (recommended) or IP + 6‑digit code.
+          <strong>Android:</strong> install the APK, stay on the same Wi-Fi as the PC, then pair via QR (recommended) or IP + 6-digit code.
           Sideload warnings are normal outside the Play Store.
         </p>
       </section>
@@ -220,10 +240,10 @@
       <section class="card" aria-labelledby="support-title">
         <h2 id="support-title">Support the project</h2>
         <p>
-          Donations help with code‑signing, store publishing, and more platforms - see milestones on Ko‑fi.
+          Donations help with code-signing, store publishing, and more platforms.
         </p>
         <a class="btn btn-primary btn-donate" href="https://ko-fi.com/fabio_monreal" rel="noopener noreferrer"
-          >Support on Ko‑fi</a
+          >Buy me a coffee ☕</a
         >
       </section>
 
@@ -258,12 +278,54 @@
     <footer class="footer">
       <p class="footer-main">
         © VibranceFlow - Fabio Monreal (<a href="mailto:fabio.monreal@outlook.com">fabio.monreal@outlook.com</a>) · All
-        rights reserved · Site MIT · Apps GPL‑3.0 ·
+        rights reserved · Site MIT · Apps GPL-3.0 ·
         <a href="https://www.linkedin.com/in/fabiomonreal/" rel="noopener noreferrer">LinkedIn</a>
       </p>
       <p class="footer-note">
-        Unpackaged / unsigned binaries may occasionally trigger antivirus heuristics; the project publishes open‑source code and VirusTotal links for transparency. If flagged, verify the SHA‑256 and report a false positive to your vendor - see the Core README.
+        Unpackaged / unsigned binaries may occasionally trigger antivirus heuristics; the project publishes open-source code and VirusTotal links for transparency. If flagged, verify the SHA-256 and report a false positive to your vendor - see the Core README.
       </p>
     </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal" aria-hidden="true">
+      <span class="modal-close" aria-label="Close image">&times;</span>
+      <img class="modal-content" id="modalImg" alt="" />
+    </div>
+
+    <script src="/downloads.js" defer></script>
+    <script>
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImg");
+      const zoomableImgs = document.querySelectorAll(".zoomable");
+      const closeBtn = document.querySelector(".modal-close");
+
+      zoomableImgs.forEach(img => {
+        img.addEventListener("click", function() {
+          modal.style.display = "flex";
+          modalImg.src = this.src;
+          modalImg.alt = this.alt;
+          document.body.style.overflow = "hidden"; // Prevent scrolling behind modal
+        });
+      });
+
+      function closeModal() {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      closeBtn.addEventListener("click", closeModal);
+
+      modal.addEventListener("click", (e) => {
+        if (e.target !== modalImg) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.style.display === "flex") {
+          closeModal();
+        }
+      });
+    </script>
   </body>
 </html>

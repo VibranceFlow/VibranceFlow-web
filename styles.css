@@ -262,6 +262,147 @@ body {
   color: var(--muted);
 }
 
+.hash-pending {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.hash-copy {
+  margin-left: 0.35rem;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  border-radius: 6px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.hash-copy-sm {
+  margin-left: 0.25rem;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.68rem;
+}
+
+.hash-copy:hover {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+.downloads-android-extra {
+  margin: -1rem auto 2rem;
+  max-width: 42rem;
+  text-align: left;
+}
+
+.dl-variants {
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--muted) 22%, transparent);
+  background: color-mix(in srgb, var(--card) 88%, var(--accent-2) 4%);
+  padding: 0.65rem 0.85rem;
+}
+
+.dl-variants summary {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  list-style: none;
+}
+
+.dl-variants summary::-webkit-details-marker {
+  display: none;
+}
+
+.dl-variants summary::before {
+  content: "▸ ";
+  color: var(--accent);
+}
+
+.dl-variants[open] summary::before {
+  content: "▾ ";
+}
+
+.dl-variants-lead {
+  margin: 0.65rem 0 0.75rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.dl-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dl-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.dl-table th,
+.dl-table td {
+  padding: 0.45rem 0.35rem;
+  border-top: 1px solid color-mix(in srgb, var(--muted) 18%, transparent);
+  vertical-align: middle;
+}
+
+.dl-table th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.dl-abi strong {
+  display: block;
+  color: var(--text);
+}
+
+.dl-abi span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.dl-action {
+  white-space: nowrap;
+  width: 1%;
+}
+
+.btn-sm {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.78rem;
+}
+
+.dl-hash {
+  font-size: 0.72rem;
+  word-break: break-all;
+}
+
+.dl-hash-cell {
+  min-width: 9rem;
+}
+
+.dl-vt {
+  margin-left: 0.25rem;
+  font-size: 0.72rem;
+  color: var(--accent);
+}
+
+.dl-variants-foot {
+  margin: 0.65rem 0 0.15rem;
+  font-size: 0.8rem;
+}
+
+.dl-variants-foot a {
+  color: var(--accent);
+}
+
 .note {
   margin: 0;
   font-size: 0.85rem;
@@ -370,4 +511,98 @@ body {
   .links-downloads .btn {
     min-width: 100%;
   }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery {
+  margin: 2rem auto;
+  max-width: 48rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.gallery-grid figure {
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--muted) 25%, transparent);
+  background: color-mix(in srgb, var(--card) 90%, var(--accent) 2%);
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.zoomable {
+  cursor: zoom-in;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.zoomable:hover {
+  opacity: 0.85;
+  transform: scale(1.02);
+}
+
+/* Modal (Lightbox) Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 15, 0.95);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  animation: zoomIn 0.2s ease-out;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  color: var(--muted);
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.15s ease;
+  z-index: 1001;
+  user-select: none;
+}
+
+.modal-close:hover {
+  color: var(--text);
+}
+
+.gallery-grid figcaption {
+  padding: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+  border-top: 1px solid color-mix(in srgb, var(--muted) 25%, transparent);
 }

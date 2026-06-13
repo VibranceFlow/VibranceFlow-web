@@ -30,7 +30,7 @@ Single-purpose **marketing and distribution** surface for VibranceFlow. It does 
 ## SEO checklist
 
 - [ ] `<title>` ≤ 60 chars, includes "VibranceFlow" + primary keyword (e.g. game vibrance Windows)
-- [ ] Meta description ~150–160 chars
+- [ ] Meta description ~150-160 chars
 - [ ] `link rel="canonical"`
 - [ ] Open Graph: `og:title`, `og:description`, `og:image`, `og:url`
 - [ ] Twitter card `summary_large_image`
@@ -41,9 +41,12 @@ Single-purpose **marketing and distribution** surface for VibranceFlow. It does 
 
 ## Download links policy
 
-- **Windows:** GitHub Release asset from VibranceFlow-core when published.
+- **Windows:** GitHub Release asset from VibranceFlow-core when published (`VibranceFlow.exe` + `.sha256`).
+- **Android:** GitHub Release from VibranceFlow-mobile - **5 APKs** per version (universal recommended). Manifest: `downloads.json` at repo root; rendered by `downloads.js` (primary button + expandable ABI table).
 - **Linux:** Release or docs link when supported; otherwise disabled CTA.
-- **Android / iOS:** Store URLs or "Coming soon" until VibranceFlow-mobile ships.
+- **Android / iOS stores:** Store URLs or "Coming soon" until published.
+
+After each release, maintainer updates `downloads.json` with URLs, SHA-256, and optional VirusTotal links (see `VibranceFlow-mobile/docs/PACKAGING.md`). **Live:** v1.1.0 (`V1.1.0` tag on GitHub Releases).
 
 Never imply a build exists without a real URL.
 
