@@ -1,0 +1,64 @@
+{
+  "release": "1.1.0",
+  "tag": "V1.1.0",
+  "windows": {
+    "label": "Windows 10/11 (.exe)",
+    "filename": "VibranceFlow.exe",
+    "url": "https://github.com/VibranceFlow/VibranceFlow-core/releases/download/V1.1.0/VibranceFlow.exe",
+    "sha256": "de47071336775b4b8486b02e35be3b6583701d3a31a2f04d29cdc9fe2e95a960",
+    "sha256Url": "https://github.com/VibranceFlow/VibranceFlow-core/releases/download/V1.1.0/VibranceFlow.exe.sha256",
+    "virustotal": "https://www.virustotal.com/gui/file/de47071336775b4b8486b02e35be3b6583701d3a31a2f04d29cdc9fe2e95a960?nocache=1",
+    "releasesPage": "https://github.com/VibranceFlow/VibranceFlow-core/releases/tag/V1.1.0"
+  },
+  "android": {
+    "recommended": "universal",
+    "releasesPage": "https://github.com/VibranceFlow/VibranceFlow-mobile/releases/tag/V1.1.0",
+    "variants": [
+      {
+        "id": "universal",
+        "label": "Universal",
+        "hint": "Recommended - works on all devices",
+        "filename": "vibranceflow-universal-release.apk",
+        "url": "https://github.com/VibranceFlow/VibranceFlow-mobile/releases/download/V1.1.0/vibranceflow-universal-release.apk",
+        "sha256": "cda8319e1c81b28961f1e4ad8bd95b3a789fd3f26bf3d71405eff49436c85775",
+        "virustotal": "https://www.virustotal.com/gui/file/e99341210c716f05d2bfd4de2fd2127076ea5b5110d35d79edd3bc4188e30cf6?nocache=1"
+      },
+      {
+        "id": "arm64-v8a",
+        "label": "ARM64",
+        "hint": "Most phones (2017+)",
+        "filename": "vibranceflow-arm64-v8a-release.apk",
+        "url": "https://github.com/VibranceFlow/VibranceFlow-mobile/releases/download/V1.1.0/vibranceflow-arm64-v8a-release.apk",
+        "sha256": "603b1bba96e89d44e19bd61ecc6732103cb220039360d2d24f7528dcd06cab08",
+        "virustotal": "https://www.virustotal.com/gui/file/6291a928100756c5ebbe027656cd2951149da643cb6dbc75ffedadb5eabec1c4?nocache=1"
+      },
+      {
+        "id": "armeabi-v7a",
+        "label": "ARM 32-bit",
+        "hint": "Older Android phones",
+        "filename": "vibranceflow-armeabi-v7a-release.apk",
+        "url": "https://github.com/VibranceFlow/VibranceFlow-mobile/releases/download/V1.1.0/vibranceflow-armeabi-v7a-release.apk",
+        "sha256": "02b1d33796fc088bbb4c7a59b2574fe000e42a96a5bfad55a8efae8b06cff85a",
+        "virustotal": "https://www.virustotal.com/gui/file/38427252a6ddeebfacd2c8ecf02365fa7a1c94c7e9696b7cc743fceee86415b6?nocache=1"
+      },
+      {
+        "id": "x86_64",
+        "label": "x86_64",
+        "hint": "Emulators / rare Intel tablets",
+        "filename": "vibranceflow-x86_64-release.apk",
+        "url": "https://github.com/VibranceFlow/VibranceFlow-mobile/releases/download/V1.1.0/vibranceflow-x86_64-release.apk",
+        "sha256": "98a34a208e271a7e82bb11f37ad177f2ce41af1833294dd2dc0835ead888cc56",
+        "virustotal": "https://www.virustotal.com/gui/file/c447c4c4a3c6a9c083e10bee33d72e5947c7d3860489c8480135ad1de19fe250?nocache=1"
+      },
+      {
+        "id": "x86",
+        "label": "x86",
+        "hint": "Legacy emulators",
+        "filename": "vibranceflow-x86-release.apk",
+        "url": "https://github.com/VibranceFlow/VibranceFlow-mobile/releases/download/V1.1.0/vibranceflow-x86-release.apk",
+        "sha256": "1abbe4c70644bf46514fddff348f1fc3946ac50b56deeb64715d119d51ba31b7",
+        "virustotal": "https://www.virustotal.com/gui/file/fcafc2b370d83df7e33b62ed74fe146cec2a501113640610b007f66295cc05f1?nocache=1"
+      }
+    ]
+  }
+}
